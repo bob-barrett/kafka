@@ -530,6 +530,7 @@ object TopicCommand extends Logging {
     ret
   }
 
+  
   def asJavaReplicaReassignment(original: Map[Int, List[Int]]): util.Map[Integer, util.List[Integer]] = {
     original.map(f => Integer.valueOf(f._1) -> f._2.map(e => Integer.valueOf(e)).asJava).asJava
   }
